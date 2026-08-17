@@ -1,0 +1,13 @@
+@keyframes floaty{
+  0%,100%{ transform:translateY(0) translateX(0); }
+  50%{ transform:translateY(-16px) translateX(6px); }
+}
+@keyframes spin{ from{ transform:translate(-50%,-50%) rotate(0deg);} to{ transform:translate(-50%,-50%) rotate(360deg);} }
+@keyframes pulse{ 0%,100%{ transform:scale(1); opacity:1;} 50%{ transform:scale(.82); opacity:.6;} }
+@keyframes fadeUp{ from{ opacity:0; transform:translateY(10px);} to{ opacity:1; transform:translateY(0);} }
+@keyframes toastIn{ to{ transform:translateX(0); opacity:1; } }
+@keyframes twinkle{ 0%,100%{ opacity:.25; } 50%{ opacity:1; } }
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important; }
+}
